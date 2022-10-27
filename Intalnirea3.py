@@ -131,25 +131,25 @@
 # y = setul5.issuperset(setul6)
 # print(y)
 
-dictionar1 = {'nota': '10', 'nume': 'Matei', 'clasa': '9'}
-print(dictionar1)
-print(len(dictionar1))
-print(dictionar1['nume'])
-x = dictionar1.get('nota')
-print(x)
-y = dictionar1.keys()
-print(y)
-z = dictionar1.values()
-print(z)
+# dictionar1 = {'nota': '10', 'nume': 'Matei', 'clasa': '9'}
+# print(dictionar1)
+# print(len(dictionar1))
+# print(dictionar1['nume'])
+# x = dictionar1.get('nota')
+# print(x)
+# y = dictionar1.keys()
+# print(y)
+# z = dictionar1.values()
+# print(z)
 
-dictionar1['nota'] = 7
-print(dictionar1)
-dictionar1.update({'nota': '11'})
-print(dictionar1)
-dictionar1['materie'] = 'matematica'
-print(dictionar1)
-dictionar1.update({'medie': '7.85'})
-print(dictionar1)
+# dictionar1['nota'] = 7
+# print(dictionar1)
+# dictionar1.update({'nota': '11'})
+# print(dictionar1)
+# dictionar1['materie'] = 'matematica'
+# print(dictionar1)
+# dictionar1.update({'medie': '7.85'})
+# print(dictionar1)
 # dictionar1.pop('medie')
 # print(dictionar1)
 # dictionar1.popitem()
@@ -161,35 +161,35 @@ print(dictionar1)
 # dictionar1.clear()
 # print(dictionar1)
 
-for x in dictionar1:
-    print(x)       # printeaza cheile
+# for x in dictionar1:
+#     print(x)       # printeaza cheile
+#
+# for y in dictionar1:
+#     print(dictionar1[y])   # printeaza cheile
+#
+# dict2 = dictionar1.copy()
+# print(dict2)
+#
+# dict3 = dict(dict2)
+# print(dict3)
 
-for y in dictionar1:
-    print(dictionar1[y])   # printeaza cheile
 
-dict2 = dictionar1.copy()
-print(dict2)
-
-dict3 = dict(dict2)
-print(dict3)
-
-
-familie = {'copil1': {'Index_zero': 'Matei', 'an': '1990'},
-           'copil2': {'123': 'Andrei', 'an': '1991'},
-           'copil3': {'456': 'Andrei', 'an': '1991'}
-           }
-print(familie)
-x = dict3.setdefault('culoare', 'rosu')
-print(x)
-print(dict3)
+# familie = {'copil1': {'Index_zero': 'Matei', 'an': '1990'},
+#            'copil2': {'123': 'Andrei', 'an': '1991'},
+#            'copil3': {'456': 'Andrei', 'an': '1991'}
+#            }
+# print(familie)
+# x = dict3.setdefault('culoare', 'rosu')
+# print(x)
+# print(dict3)
 # dict3.popitem()
 # print(dict3)
-1
-dict4 = dict.fromkeys(dict3)
-print(dict4)
-x = {'key1', 'key2', 'key3'}
-y = 1990
-dict5 = dict.fromkeys(x, y)
-print(dict5)
 
-print(familie['copil1']['an'])
+# dict4 = dict.fromkeys(dict3)
+# print(dict4)
+# x = {'key1', 'key2', 'key3'}
+# y = 1990
+# dict5 = dict.fromkeys(x, y)
+# print(dict5)
+#
+# print(familie['copil1']['an'])
