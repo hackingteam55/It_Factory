@@ -10,24 +10,24 @@ chrome = webdriver.Chrome(service=s)
 # maximizam fereastra
 chrome.maximize_window()
 
-#navigam catre un url
+# navigam catre un url
 chrome.get('https://formy-project.herokuapp.com/form')
 
 
-#selector by CSS SELECTOR - ID
-chrome.find_element(By.CSS_SELECTOR, 'input#first-name').send_keys('Ma')
+# selector by CSS SELECTOR - ID
+chrome.find_element(By.CSS_SELECTOR, 'input#first-name').send_keys('test1')
 
-#selector by CSS Class - only first one if multiple matches
-chrome.find_element(By.CSS_SELECTOR, 'input.form-control').send_keys('tei')
+# selector by CSS Class - only first one if multiple matches
+chrome.find_element(By.CSS_SELECTOR, 'input.form-control').send_keys('test2')
 
-#selector by CSS atribut-valoare
-chrome.find_element(By.CSS_SELECTOR, 'input[placeholder="Enter last name"]').send_keys('O')
+# selector by CSS atribut-valoare
+chrome.find_element(By.CSS_SELECTOR, 'input[placeholder="Enter last name"]').send_keys('test3')
 
-#selector by CSS atribut-valoare partiala + parine -> copil
-chrome.find_element(By.CSS_SELECTOR, 'div input[placeholder*="last name"]').send_keys('ltean')
+# selector by CSS atribut-valoare partiala + parine -> copil
+chrome.find_element(By.CSS_SELECTOR, 'div input[placeholder*="last name"]').send_keys('test4')
 
 
-sleep(3)
+sleep()
 chrome.quit()
 
 

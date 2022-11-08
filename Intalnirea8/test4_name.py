@@ -15,8 +15,10 @@ chrome.get('http://www.seleniumframework.com/Practiceform/')
 
 
 #selector by name
-link_test = chrome.find_element(By.NAME, 'country')
-link_test.send_keys('Romania')
+# link_test = chrome.find_element(By.NAME, 'country')
+# link_test.send_keys('Romania')
+
+chrome.find_element(By.NAME, 'country').send_keys('Romania')
 
 sleep(3)
 chrome.quit()

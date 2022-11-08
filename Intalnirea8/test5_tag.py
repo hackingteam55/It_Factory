@@ -15,12 +15,12 @@ chrome.get('https://formy-project.herokuapp.com/form')
 
 
 #selector by TAG cand e unul singur
-chrome.find_element(By.TAG_NAME, 'input').send_keys('Matei')
+chrome.find_elements(By.TAG_NAME, 'input')
 
 #daca gasim mai multe, le punem intr-o lista
 input_list = chrome.find_elements(By.TAG_NAME, 'input')
 #print(input_list)
-input_list[1].send_keys('Alexandru Ioan Cuza')
+input_list[4].send_keys('Alexandru Ioan Cuza')
 
 sleep(3)
 chrome.quit()

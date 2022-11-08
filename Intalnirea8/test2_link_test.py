@@ -15,8 +15,10 @@ chrome.get('https://formy-project.herokuapp.com/')
 
 
 #selector by link_text
-link_test = chrome.find_element(By.LINK_TEXT, 'Autocomplete')
-link_test.click()
+# link_test = chrome.find_element(By.LINK_TEXT, 'Autocomplete')
+# link_test.click()
+
+chrome.find_element(By.LINK_TEXT, 'Autocomplete').click()
 
 sleep(3)
 chrome.quit()

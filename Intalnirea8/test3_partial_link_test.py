@@ -15,12 +15,12 @@ chrome.get('https://formy-project.herokuapp.com/')
 
 
 #selector by partial_link_test
-try:
-    partial_link_test = chrome.find_element(By.PARTIAL_LINK_TEXT, 'Enabled2')
-    partial_link_test.click()
-except Exception as e:
-    print(f'Nu am gasit elementul cautat')
-print('Am ajuns aici')
+# try:
+partial_link_test = chrome.find_element(By.PARTIAL_LINK_TEXT, 'and disabled')
+partial_link_test.click()
+# except Exception as e:
+#     print(f'Nu am gasit elementul cautat')
+# print('Am ajuns aici')
 sleep(3)
 chrome.quit()
 

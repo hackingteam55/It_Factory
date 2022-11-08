@@ -15,12 +15,12 @@ chrome.get('https://formy-project.herokuapp.com/form')
 
 
 #selector by CLASS_NAME cand e unul singur , e ok daca avem Clasa unica
-chrome.find_element(By.CLASS_NAME, 'form-control').send_keys('Matei')
+# chrome.find_element(By.CLASS_NAME, 'form-control').send_keys('Matei')
 
 #daca gasim mai multe, le punem intr-o lista
 input_list = chrome.find_elements(By.CLASS_NAME, 'form-control')
 #print(input_list)
-input_list[1].send_keys('Alexandru Ioan Cuza')
+input_list[0].send_keys('TEST ALADIN')
 
 sleep(3)
 chrome.quit()
