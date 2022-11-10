@@ -12,7 +12,7 @@ chrome.get('https://formy-project.herokuapp.com/')
 chrome.find_element(By.LINK_TEXT, 'Autocomplete').click()
 sleep(1)
 actual = chrome.current_url
-expected = 'https://formy-project.herokuapp.com/autocomplete2'
+expected = 'https://formy-project.herokuapp.com/autocomplete'
 sleep(1)
 assert actual == expected, f'Url invalid: expected {expected}, found {actual}'
 print('Test Passed')
