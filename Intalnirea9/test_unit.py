@@ -28,6 +28,8 @@ class Test(TestCase):
     YRS_OF_EXP_0_1 = (By.XPATH, '//*[@id="select-menu"]/option[2]')
     DATE_SELECT = (By.XPATH, '//*[@id="datepicker"]')
     # se rulaza inainte de fiecare test si are rolul de a face setupul de chrome inainte de fiecare test
+
+
     def setUp(self) -> None:
         s = Service(ChromeDriverManager().install())
         self.chrome = webdriver.Chrome(service=s)
@@ -73,5 +75,13 @@ class Test(TestCase):
         self.chrome.find_element(*self.DATE_SELECT).click()
         sleep(1)
         self.chrome.find_element(*self.SUBMIT_BTN).click()
+        sleep(1)
+        actual = WebDriverWait(self.chrome, 3).until(EC.text_to_be_present_in_element
+                                                     ((By.XPATH, '//div/div[@role="alert"]'),
+                                                      "The form was successfully submitted!"))
+        if actual:
+            print('Message found is correct')
+        else:
+            print(f'Message found incorrect')
 
 

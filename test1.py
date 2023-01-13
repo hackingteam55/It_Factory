@@ -24,7 +24,7 @@
 # string_impar = input("Introduceti un string impar ")
 # x = string_impar[math.floor(len(string_impar) / 2)]
 # print(x)
-import calendar
+# import calendar
 # a = 17
 # b = 5
 #
@@ -93,16 +93,17 @@ import calendar
 # print(print_nume('Ion', 'test'))
 
 
-from calendar import monthrange
-
-num_days = monthrange(2022, 11)[1]
-print(num_days) # aici se printeaza numarul de zile
-
-def nr_zile():
-    return monthrange(2021, 11)
-print(nr_zile())
+# from calendar import monthrange
+#
+# num_days = monthrange(2022, 11)[1]
+# print(num_days) # aici se printeaza numarul de zile
+#
+# def nr_zile():
+#     return monthrange(2021, 11)
+# print(nr_zile())
 
 # from calendar import monthrange
 # def numar_zile_ale_lunii(an=2022,luna=2):
 #     return monthrange(2022, 1)
 # print(numar_zile_ale_lunii(2022,2))
+
