@@ -162,5 +162,69 @@ y: (String) - user input from keyboard - caracterul dorit
 # print(zile_luna(lunatastatura))
 
 
+# def calculator(x, y):
+#     suma = x + y
+#     diferenta = x - y
+#     produs = x * y
+#     impartire = x / y
+#     print(f'suma este {suma}')
+#     print(f'diferenta este {diferenta}')
+#     print(produs)
+#     print(impartire)
 
+
+# calculator(2, 6)
+
+# def calculeaza(a, b):
+#     suma = a + b
+#     diferenta = a - b
+#     inmultirea = a * b
+#     impartirea = a / b
+#     return suma, diferenta, inmultirea, impartirea
+#
+#
+# a, b, c, d = calculeaza(10, 2)
+# print("Suma: ", a)
+# print("Diferenta: ", b)
+# print("Inmultirea: ", c)
+# print("Impartirea: ", d)
+
+
+lista1 = [1, 2, 2, 2, 7, 7, 7]
+
+
+def count(lista):
+    cnt = {
+        0: 0,
+        1: 0,
+        2: 0,
+        3: 0,
+        4: 0,
+        5: 0,
+        6: 0,
+        7: 0,
+        8: 0,
+        9: 0
+    }
+    for i in cnt.keys():
+        for j in lista:
+            if i == j:
+                cnt[i] = cnt[i] + 1
+    for key, value in cnt.items():
+        print(key, ':', value)
+
+
+count(lista1)
+
+
+
+# import json
+# def numara_cifre(*lista_cifre):
+#     dict_cifre = {i: 0 for i in range(10)}
+#     for cifra in lista_cifre:
+#         dict_cifre[cifra] += 1
+#     return dict_cifre
+#
+#
+# print(json.dumps(numara_cifre(2, 3, 4, 2, 2, 4, 5, 6, 2), indent=4))
 

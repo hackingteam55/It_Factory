@@ -108,14 +108,14 @@
 # from helper import suma
 # print(suma(21, 22))
 #
-from helper import Persoana
-
-pers1 = Persoana('Matei', 'Oltean', 5)
-print(pers1.descrie())
-print(pers1.ani())
-pers2 = Persoana('Andrei', 'Test', 25)
-print(pers2.descrie())
-print(pers2.ani())
+# from helper import Persoana
+#
+# pers1 = Persoana('Matei', 'Oltean', 5)
+# print(pers1.descrie())
+# print(pers1.ani())
+# pers2 = Persoana('Andrei', 'Test', 25)
+# print(pers2.descrie())
+# print(pers2.ani())
 #
 # scr2 = scr1
 #

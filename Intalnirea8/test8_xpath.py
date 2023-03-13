@@ -34,6 +34,11 @@
 #     my_input = chrome.find_element(By.XPATH, f'//input[@placeholder="{placeholder_text}"]')
 #     my_input.clear()
 #     my_input.send_keys(input_value)
+
+# exemplu cu pipe
+# exemplu de parent ::
+# frate anterior sau de dupa
+# functia
 #
 #
 # formy_input_by_placeholder('Enter first name', 'Aladin')

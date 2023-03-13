@@ -18,7 +18,7 @@ class Keyboard(unittest.TestCase):
         self.chrome.maximize_window()
         self.chrome.implicitly_wait(5)
 
-    @unittest.skip
+
     def test_select_all(self):
         self.chrome.get("https://the-internet.herokuapp.com/login")
         user = self.chrome.find_element(*self.USER)

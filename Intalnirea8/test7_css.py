@@ -23,11 +23,11 @@ chrome.find_element(By.CSS_SELECTOR, 'input.form-control').send_keys('test2')
 # selector by CSS atribut-valoare
 chrome.find_element(By.CSS_SELECTOR, 'input[placeholder="Enter last name"]').send_keys('test3')
 
-# selector by CSS atribut-valoare partiala + parine -> copil
+# selector by CSS atribut-valoare partiala + parinte -> copil
 chrome.find_element(By.CSS_SELECTOR, 'div input[placeholder*="last name"]').send_keys('test4')
 
 
-sleep()
+sleep(5)
 chrome.quit()
 
 

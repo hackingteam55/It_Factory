@@ -18,13 +18,13 @@ chrome.get('https://formy-project.herokuapp.com/form')
 
 
 #selector by ID
-# try:
-first_name = chrome.find_element(By.ID, 'first-name')
-first_name.send_keys('Matei')
-# except Exception as e:
-#     print('ID-ul introdus nu este corect')
-# print('Am ajuns aici')
-# chrome.find_element(By.ID, 'first-name2').send_keys('TEST AUTOMATION')
+try:
+    first_name = chrome.find_element(By.ID, 'first-name')
+    first_name.send_keys('Matei')
+except Exception as e:
+    print('ID-ul introdus nu este corect')
+print('Am ajuns aici')
+chrome.find_element(By.ID, 'first-name').send_keys('TEST AUTOMATION')
 
 sleep(10)
 chrome.quit()

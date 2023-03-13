@@ -69,18 +69,18 @@
 
 
 # functii din alte fisiere
-from helper import suma
-from helper import produs
-
-
-def produs2():
-    a = int(input("introdu a"))
-    b = int(input("introdu b"))
-    print(produs(a, b))
-    print(suma(a, b))
-
-
-produs2()
+# from helper import suma
+# from helper import produs
+#
+#
+# def produs2():
+#     a = int(input("introdu a"))
+#     b = int(input("introdu b"))
+#     print(produs(a, b))
+#     print(suma(a, b))
+#
+#
+# produs2()
 
 
 
